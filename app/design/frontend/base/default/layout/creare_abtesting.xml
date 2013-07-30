@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+        <reference name="google_analytics">
+            <action method="setTemplate"><template>creare/abtesting/ga.phtml</template></action>
+        </reference>
+    </default>
+</layout>
