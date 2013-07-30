@@ -15,4 +15,4 @@ In the admin section we have the ability to add a specific Google Analytics trac
 
 This extension also retains the master Google Analytics account details.
 
-Please feel free to fork it or follow the author on twitter <a href="http://twitter.com/kent_robert">kent_robert</a>
+Please feel free to fork it or follow the author on twitter (<a href="http://twitter.com/kent_robert">kent_robert</a>).
