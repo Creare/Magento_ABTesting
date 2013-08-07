@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Creare_Abtesting>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Creare_Abtesting>
+    </modules>
+</config>
