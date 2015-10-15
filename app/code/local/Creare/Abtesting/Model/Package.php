@@ -33,7 +33,7 @@ class Creare_Abtesting_Model_Package extends Mage_Core_Model_Design_Package
             if (!Mage::getSingleton('core/session')->getAbTestingTheme()) {
                 $replace = Mage::getSingleton('core/design_package')->getPackageName() . "/";
                 if (!$cookie) {
-                    $test = Mage::getStoreConfig('abtesting/current/test');
+                    $test = (mt_rand(0,1)==0) ? "a":"b";
                     Mage::getModel('core/cookie')->set('abtesting', $test);
                     Mage::getSingleton('core/session')->setAbTesting('yes'); // temporarily set this to yes - so as not to double up this code
                     if ($test == "a") {
@@ -42,14 +42,12 @@ class Creare_Abtesting_Model_Package extends Mage_Core_Model_Design_Package
                         if ($code && !empty($code)) {
                             $this->_theme[$type] = str_replace($replace, "", Mage::getStoreConfig('abtesting/accounts/adesign'));
                         }
-                        Mage::getConfig()->saveConfig('abtesting/current/test', 'b');
                     } else {
                         $code = Mage::getStoreConfig('abtesting/accounts/bcode');
                         Mage::getSingleton('core/session')->setAbTest('b');
                         if ($code && !empty($code)) {
                             $this->_theme[$type] = str_replace($replace, "", Mage::getStoreConfig('abtesting/accounts/bdesign'));
                         }
-                        Mage::getConfig()->saveConfig('abtesting/current/test', 'a');
                     }
                 } else {
                     $test = $cookie;
