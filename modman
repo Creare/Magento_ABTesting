@@ -1,0 +1,4 @@
+app/code/local/Creare/Abtesting app/code/local/Creare/Abtesting
+app/design/frontend/base/default/layout/creare_abtesting.xml  app/design/frontend/base/default/layout/creare_abtesting.xml
+app/design/frontend/base/default/template/creare/abtesting  app/design/frontend/base/default/template/creare/abtesting
+app/etc/modules/Creare_Abtesting.xml  app/etc/modules/Creare_Abtesting.xml
